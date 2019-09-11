@@ -138,6 +138,7 @@ convertToString(21); // "21"
  * @param {number} n
  * @return {boolean} the number is odd
  */
+let isEven = (a) => (!(a & 1));
 
 /**
  * Returns a letter grade.
@@ -150,6 +151,20 @@ convertToString(21); // "21"
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+let grade = (score) => {
+	switch (true) {
+		case score >= 90:
+			return 'A';
+		case score >= 80:
+			return 'B';
+		case score >= 70:
+			return 'C';
+		case score >= 60:
+			return 'D';
+		default:
+			return 'F';				
+	}
+} 
 
 /**
  * Joins two strings with a space.
@@ -157,3 +172,4 @@ convertToString(21); // "21"
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+let join = (word1, word2) => (word1 + ' ' + word2);
